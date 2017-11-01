@@ -21,10 +21,10 @@ p names[100]
 #names.fetch(100) will throw error
 p names.fetch(100, "not here")
 
-p nums [2,5]
+p nums [2,5]#start at index 2 and return 5
 p nums [2,2]
 p nums [2,100]
-p nums [2..5]
+p nums [2..5]#return index range 2-5
 
 p names.values_at(0,2, 1)
 
