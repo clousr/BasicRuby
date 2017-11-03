@@ -18,7 +18,7 @@ k = [3,4,4]
 #+ = 1
 #iterate over and identify which sections need to be flipped x<k
 # identify how many sections you have, length of flipped - k -1
-# 0 to 3
+# 0 to  3
 
 
 def flipper(flipped, k)
