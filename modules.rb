@@ -8,10 +8,20 @@ module LengthConversions
     feet = miles_to_feet(miles)
     feet *12
   end
-  def self.miles_to_centimeters(miles)
-    inches = miles_to_inches(miles)
+  def miles_to_centimeters
+    inches = self.miles.miles_to_inches
     inches * 2.54
   end
 end
+
+class TestClass
+  include LengthConversions
+  attr_accessor:miles
+  def initialize(miles)
+    @miles = miles
+  end
+end
 p LengthConversions.miles_to_feet(100)
-p LengthConversions.miles_to_centimeters(100)
+var = TestClass.new(100)
+p var.miles
+p var.miles_to_centimeters
